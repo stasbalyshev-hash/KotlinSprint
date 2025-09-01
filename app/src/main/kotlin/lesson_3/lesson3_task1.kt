@@ -1,5 +1,4 @@
 package org.example.app.lesson_3
-
 fun main() {
     val name = "Ivan"
     val greeting = "Hello"
