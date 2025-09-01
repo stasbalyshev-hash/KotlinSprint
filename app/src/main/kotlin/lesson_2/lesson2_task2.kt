@@ -1,12 +1,15 @@
 package org.example.app.lesson_2
 
 fun main() {
-//    val countOfOrders: Int = 75
-//    val gratitudePeople: String = "Thanks for our order!"
-//    println("Count of orders: $countOfOrders")
-//    println(gratitudePeople)
-//    val countOfWorker = 2000
-//    println("Count of worker in online store: $countOfWorker")
-        val countOfWorkerNew = 1999
-        println("Actual count of worker: $countOfWorkerNew")
+    val oldWorkers = 50
+    val salaryOldWorker = 30000
+    val interns = 30
+    val salaryOfInterns = 20000
+    val totalSalaryOldWorkers = oldWorkers * salaryOldWorker  // подсчет расходов на выплаты постоянным сотрудникам
+    println("The total salary of all old workers: " + totalSalaryOldWorkers) // печать расходов на выплаты постоянным сотрудникам
+    val totalSalaryInterns = interns * salaryOfInterns // подсчет общей выплаты интернам
+    val totalSalary = totalSalaryOldWorkers + totalSalaryInterns // подсчет общей суммы зарплат всех работников
+    println("Total salary costs for all workers: $totalSalary") // печать общей суммы зарплат всех работников
+    val averageSalary = (totalSalaryOldWorkers + totalSalaryInterns) / (oldWorkers + interns) // подсчет средней зп после прихода стажеров
+    println("The average salary of one employee after the arrival of interns: $averageSalary") // печать средней зп после прихода стажеров
 }
