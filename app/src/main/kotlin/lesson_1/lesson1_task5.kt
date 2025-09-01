@@ -1,15 +1,17 @@
-package org.example.app.lesson_2
-    const val part = 60
+package org.example.app.lesson_1
+
+const val part = 60
+
 fun main() {
     val seconds = 6480
-    var minute = seconds / part
+    val minute = seconds / part
     var hour = 0
-        hour++
+    hour++
     val minutesSpent = minute % part
     val secondsSpent = minutesSpent / part
     val hourSpent = String.format("0%d",hour)
     val secondsSpent1 = String.format("0%d",secondsSpent)
-    println("Time spent in space: " + hourSpent + ":" + minutesSpent + ":" + secondsSpent1)
 
+    println("Time spent in space: $hourSpent:$minutesSpent:$secondsSpent1")
 }
 
