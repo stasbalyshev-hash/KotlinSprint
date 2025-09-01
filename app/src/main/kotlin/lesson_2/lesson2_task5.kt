@@ -7,6 +7,5 @@ fun main() {
     val rateOfInterest = 0.167
     val years = 20
     val amountOfDeposit: Double = (initialSum * (1+rateOfInterest).pow(years))
-    print("The contribution amount in 20 years will be: ")
-    println("%.3f".format(amountOfDeposit))
+    println("The contribution amount in 20 years will be: ${"%.3f".format(amountOfDeposit)}")
 }
