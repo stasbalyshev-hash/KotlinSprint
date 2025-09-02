@@ -1,15 +1,14 @@
 package org.example.app.lesson_2
 
-import java.time.LocalDate
+import kotlin.math.pow
+
+const val PERCENT = 100
 
 fun main() {
-    val seconds = 6480
-    var minute = seconds / 60
-    var hour = 0
-    if (minute/60 > 0)
-        hour++
-        val minuteSpent: Int = minute % 60
-        val secondsSpent: Int = minuteSpent / 60
-    print("Time spent in space: " + "0$hour:" + "$minuteSpent:" + "0$secondsSpent")
-}
+    val initialSum = 70000
+    val rateOfInterest = 16.7
+    val years = 20
+    val amountOfDeposit = initialSum * ((1 + (rateOfInterest / PERCENT)).pow(years))
 
+    println("The contribution amount in 20 years will be: ${"%.3f".format(amountOfDeposit)}")
+}
