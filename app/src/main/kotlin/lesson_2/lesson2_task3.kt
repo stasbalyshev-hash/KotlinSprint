@@ -1,14 +1,14 @@
 package org.example.app.lesson_2
 
-fun main() {
-    val year = 1961
-    var hour = 9
-    var minute = 7
-    println("Takeoff time year: $year")
-    println("Takeoff time hour: $hour")
-    println("Takeoff time minute: $minute")
-    hour = 10
-    minute = 55
-    print("Boarding time: " + "$hour:" + "$minute")
+const val PART = 60
 
+fun main() {
+    val hoursDeparture = 9
+    val minutesDeparture = 39
+    val travelTime = 457
+    val generalMinutesDeparture = hoursDeparture * PART + minutesDeparture + travelTime // считаем общее кол-во минут (минуты текущего времени + минуты в пути)
+    val arrivalHours = generalMinutesDeparture / PART // считаем кол-во часов в конце пути
+    val arrivalMinutes = generalMinutesDeparture % PART // считаем кол-во минут в конце пути
+
+    println("Train arrival time: $arrivalHours:$arrivalMinutes")
 }
