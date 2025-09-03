@@ -1,16 +1,14 @@
 package org.example.app.lesson_2
 
+const val PERCENT = 100
+
 fun main() {
-    val length: Long = 40_868_600_000
-    val age: Byte = 27
-    val partOfDay: Float = 0.075F
-    val seconds: Short = 6480
-    val partOfYear: Double  = 2.0547945205479453E-4
-    val apogee: Int = 327000
-    println(length)
-    println(age)
-    println(partOfDay)
-    println(seconds)
-    println(partOfYear)
-    println(apogee)
+    val crystal = 7
+    val iron = 11
+    val buff = 20
+    val buffedCrystal = (crystal * buff) / PERCENT
+    val buffedIron = (iron * buff) / PERCENT
+
+    println("buffedCrystal: $buffedCrystal")
+    println("buffedIron: $buffedIron")
 }
