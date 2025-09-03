@@ -6,9 +6,9 @@ fun main() {
     val hoursDeparture = 9
     val minutesDeparture = 39
     val travelTime = 457
-    val generalMinutesDeparture = hoursDeparture * PART + minutesDeparture + travelTime // считаем общее кол-во минут (минуты текущего времени + минуты в пути)
-    val arrivalHours = generalMinutesDeparture / PART // считаем кол-во часов в конце пути
-    val arrivalMinutes = generalMinutesDeparture % PART // считаем кол-во минут в конце пути
+    val generalMinutesDeparture = hoursDeparture * PART + minutesDeparture + travelTime
+    val arrivalHours = generalMinutesDeparture / PART
+    val arrivalMinutes = generalMinutesDeparture % PART
 
-    println("Train arrival time: $arrivalHours:$arrivalMinutes")
+    println("%02d:%02d".format(arrivalHours,arrivalMinutes))
 }
