@@ -2,11 +2,9 @@ package org.example.app.lesson_3
 
 fun main() {
     val firstStep = "D2-D4;0"
-    val start = firstStep.take(2)
-    val end = firstStep.substring(3, 5)
-    val step = firstStep[6]
+    val arr = firstStep.split("-",";")
 
-    println("start with $start")
-    println("end in $end")
-    println("step number $step")
+    println("start with ${arr[0]}")
+    println("end in ${arr[1]}")
+    println("step number ${arr[2]}")
 }
