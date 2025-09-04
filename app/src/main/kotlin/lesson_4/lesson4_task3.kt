@@ -8,7 +8,7 @@ fun main() {
     val sunnyToday: Boolean = true
     val openTentToday: Boolean = true
     val humidityToday = 20
-    val yearToday = "шум моря"
+    val yearToday = "зима"
     val result = sunny == sunnyToday && openTent == openTentToday && humidity == humidityToday && !year.equals(yearToday)
 
     println("Благоприятные ли сейчас условия для роста бобовых: $result")
