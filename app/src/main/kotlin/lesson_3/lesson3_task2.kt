@@ -2,12 +2,14 @@ package org.example.app.lesson_3
 
 fun main() {
     val name = "Tatiana"
-    val firstSurname = "Andreeva"
-    val secondSurname = "Sidorova"
+    var surname = "Andreeva"
     val patronymic = "Sergeevna"
-    val year = 20
-    val year1 = 22
+    var year = 20
 
-    println("$firstSurname $name $patronymic, $year years")
-    println("$secondSurname $name $patronymic, $year1 years")
+    println("$surname $name $patronymic, $year лет")
+
+    year = 22
+    surname = "Sidorova"
+
+    println("$surname $name $patronymic, $year года")
 }
