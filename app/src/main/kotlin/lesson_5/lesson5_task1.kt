@@ -1,17 +1,13 @@
 package org.example.app.lesson_5
 
-import kotlin.random.Random
-
 fun main() {
-    val random = Random
-    val firstNumber = random.nextInt(99)
-    val secondNumber = random.nextInt(99)
-    val sum = firstNumber + secondNumber
+    val firstNumber = (1..99).random()
+    val secondNumber = (1..99).random()
 
     println("Решите пример: $firstNumber + $secondNumber = ")
 
     val userAnswer = readln().toInt()
-    if (userAnswer == sum) {
+    if (userAnswer == firstNumber + secondNumber) {
         println("Добро пожаловать!")
     } else {
         println("Доступ запрещен.")
