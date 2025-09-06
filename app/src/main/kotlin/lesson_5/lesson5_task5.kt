@@ -1,12 +1,11 @@
 package org.example.app.lesson_5
 
-
 fun main() {
     val listRandom = List(3) { (0..42).random() }
 
     println("Попытайтесь угадать 3 числа:")
 
-    val inputList = listOf(readln(),readln(),readln())
+    val inputList = listOf(readln().toInt(), readln().toInt(), readln().toInt())
     val overlap = inputList.intersect(listRandom).size
 
     when (overlap) {
