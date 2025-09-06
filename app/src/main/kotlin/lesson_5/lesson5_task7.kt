@@ -10,8 +10,6 @@ fun main() {
     val amountOfFuel = (travelDistance * fuelRate) / 100
     val totalCostOfFuel = amountOfFuel * fuelCostPerLiter
 
-    println("Общее количество необходимого топлива для поездки равно: ")
-    println("%.2f".format(amountOfFuel))
-    println("Итоговая стоимость поездки равна: ")
-    println("%.2f".format(totalCostOfFuel))
+    println("Общее количество необходимого топлива для поездки равно: " + "%.2f".format(amountOfFuel))
+    println("Итоговая стоимость поездки равна: " + "%.2f".format(totalCostOfFuel))
 }
