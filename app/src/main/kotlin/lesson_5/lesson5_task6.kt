@@ -16,15 +16,12 @@ fun main() {
     val convertedHeight = userHeight / PERCENT
     val bodyMassIndex = userWeight / (convertedHeight).pow(SQUARE)
 
-    println("%.2f".format(bodyMassIndex))
+    println("Ваш ИМТ = %.2f".format(bodyMassIndex))
 
-    if (bodyMassIndex < UNDERWEIGHT_LIMIT) {
-        println("Ваша категория веса: недостаточная масса тела")
-    } else if (bodyMassIndex < NORMAL_LIMIT) {
-        println("Ваша категория веса: нормальная масса тела")
-    } else if (bodyMassIndex < OVERWEIGHT_LIMIT) {
-        println("Ваша категория веса: избыточная масса тела")
-    } else {
-        println("Ваша категория веса: ожирение")
+    when {
+        bodyMassIndex < UNDERWEIGHT_LIMIT -> println("Ваша категория веса: недостаточная масса тела")
+        bodyMassIndex < NORMAL_LIMIT -> println("Ваша категория веса: нормальная масса тела")
+        bodyMassIndex < OVERWEIGHT_LIMIT -> println("Ваша категория веса: избыточная масса тела")
+        else -> println("Ваша категория веса: ожирение")
     }
 }
